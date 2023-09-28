@@ -21,6 +21,21 @@ namespace ToDoList.Models
       // Holds a list of items
       Items = new List<Item> { };
     }
+
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
+
+    public static List<Category> GetAll()
+    {
+      return _instances;
+    }
+
+    public static Category Find(int IdToFind)
+    {
+      return _instances[IdToFind - 1];
+    }
   }
 }
 
