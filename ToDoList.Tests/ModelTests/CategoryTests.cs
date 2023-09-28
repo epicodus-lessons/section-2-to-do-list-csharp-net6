@@ -66,5 +66,25 @@ namespace ToDoList.Tests
       // Assert
       Assert.AreEqual(firstCategory, foundInstance);      
     }
+
+    [TestMethod]
+    public void AddItem_AddItemToCategory_ItemList()
+    {
+      // Make an instance of a Category
+      Category nameOfCategory = new Category("Home");
+      
+      //Make an instance of an Item
+      string newItemDescription = "dishes";
+      Item instanceOfItem = new Item(newItemDescription);
+
+      // Here's a list of items for us to compare the one made automatically.
+      List<Item> listOfItems = new List<Item> {instanceOfItem};
+
+//           let listOfItems = new List<Item> {}
+      nameOfCategory.AddItem(instanceOfItem);
+      List<Item> result = nameOfCategory.Items;
+      CollectionAssert.AreEqual(listOfItems, result);
+
+    }
   }
 }

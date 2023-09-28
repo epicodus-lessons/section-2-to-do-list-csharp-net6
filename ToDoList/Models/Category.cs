@@ -36,6 +36,11 @@ namespace ToDoList.Models
     {
       return _instances[IdToFind - 1];
     }
+
+    public void AddItem(Item itemForToDoList)
+    {
+      Items.Add(itemForToDoList);
+    }
   }
 }
 
@@ -44,11 +49,11 @@ namespace ToDoList.Models
 
 
 // List of Categories
-// - Home Tasks
+// - Home
 //   - Name
 //   - Id
 //   - To Do Items
-//   --- Groceries
+//   --- Dishes
 //   --- Walk the dog
 //   --- Take out the trash
 
