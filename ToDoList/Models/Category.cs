@@ -51,7 +51,7 @@ namespace ToDoList.Models
 // List of Categories
 // - Home
 //   - Name
-//   - Id
+//   - Id = 1
 //   - To Do Items
 //   --- Dishes
 //   --- Walk the dog
@@ -59,7 +59,7 @@ namespace ToDoList.Models
 
 // - Work Related Tasks
 //   - Name
-//   - Id
+//   - Id = 2
 //   - To Do Items
 //   --- Groceries
 //   --- Walk the dog
@@ -67,7 +67,7 @@ namespace ToDoList.Models
 
 // - Family Tasks
 //   - Name
-//   - Id
+//   - Id = 3
 //   - To Do Items
 //   --- Groceries
 //   --- Walk the dog
